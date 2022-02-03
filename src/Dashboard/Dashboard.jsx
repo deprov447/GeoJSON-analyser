@@ -20,14 +20,10 @@ const Dashboard = () => {
   const [proData, setProData] = useState();
   const [genData, setGenData] = useState();
 
-  console.log("areaData", areaData);
-  console.log("proData", proData);
-  console.log("genData", genData);
-
   return (
     <div className={styles.rowStretch}>
       <Row gutter={[16, 16]} justify="center" align="middle">
-        <Col span={12}>
+        <Col xs={(24, { order: 2 })} md={12}>
           <Tabs defaultActiveKey="1" centered>
             <TabPane tab="General Stats" key="1">
               {genData != null ? (
@@ -271,7 +267,8 @@ const Dashboard = () => {
           </Tabs>
         </Col>
         <Col
-          span={12}
+          xs={(24, { order: 1 })}
+          md={12}
           style={{
             display: "flex",
             justifyContent: "center",
