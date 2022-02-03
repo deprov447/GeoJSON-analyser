@@ -1,0 +1,52 @@
+@import "~antd/dist/antd.less";
+
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Lora&family=Montserrat:wght@700&display=swap");
+
+/* 
+https://coolors.co/palette/10002b-240046-3c096c-5a189a-7b2cbf-9d4edd-c77dff-e0aaff
+*/
+
+:root {
+  --hind: "Hind Madurai", sans-serif;
+  --lora: "Lora", serif;
+  --mont: "Montserrat", sans-serif;
+
+  // Colors
+  --russian-violet: #10002bff;
+  --russian-violet-2: #240046ff;
+  --persian-indigo: #3c096cff;
+  --purple: #5a189aff;
+  --french-violet: #7b2cbfff;
+  --dark-orchid: #9d4eddff;
+  --heliotrope: #c77dffff;
+  --mauve: #e0aaffff;
+}
+
+body {
+  margin: 0;
+  font-family: var(--mont);
+  color: var(--mauve);
+}
+
+.App {
+  text-align: center;
+}
+
+#components-layout-demo-responsive .logo {
+  height: 32px;
+  margin: 16px;
+  background: var(--french-violet);
+}
+
+.bgDark {
+  background-color: var(--russian-violet);
+}
+
+.bgDark2 {
+  background-color: var(--russian-violet-2);
+}
+
+.ant-layout-sider-children {
+  display: flex;
+  align-items: center;
+}
